@@ -1,0 +1,8 @@
+.CalculatorContainer{
+    background-color: #FFFFFF;
+    border-radius:40px ;
+    width: 80%;
+    height: 80vh;
+    margin-bottom: 20px;
+    padding: 20px;
+}
