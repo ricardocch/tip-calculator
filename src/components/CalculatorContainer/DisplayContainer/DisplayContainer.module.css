@@ -40,3 +40,14 @@
 .ButtonContainer button:hover{
     background-color: #9FE8DF;
 }
+
+@media(max-width:525px){
+    .DisplayContainer{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .ButtonContainer{
+        height: 35%;
+    }
+}

@@ -35,3 +35,9 @@
     font-size: 18px;
     margin-bottom: 30px;
 }
+
+@media(max-width:525px){
+    .TotalPeople input{
+        width: 90%;
+    }
+}

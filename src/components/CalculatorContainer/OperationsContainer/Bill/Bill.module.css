@@ -36,5 +36,11 @@
     font-size: 18px;
 }
 
+@media(max-width:525px){
+    .Bill input{
+        width: 90%;
+    }
+}
+
 
 
