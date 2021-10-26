@@ -1,3 +1,37 @@
 .TotalPeople{
     
 }
+
+.Text{
+    display: block;
+    color: #00474b;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.icon{
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+}
+
+.TotalPeople input{
+    display: inline-block;
+    width: 85%;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #00474B;
+    background-color: #F3F9F9;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}

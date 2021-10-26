@@ -7,6 +7,15 @@
   flex-wrap: wrap;
 }
 
+input:focus {
+  border-color: #00474b;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(0 150 136 / 28%);
+}
+
+input::placeholder {
+  color: #00474B;
+}
 
 
 
