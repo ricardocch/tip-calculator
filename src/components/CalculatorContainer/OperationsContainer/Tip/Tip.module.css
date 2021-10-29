@@ -41,6 +41,7 @@
     color: #00474b;
 }
 
+
 .Tip input{
     display: inline-block;
     width: 20%;
@@ -58,6 +59,11 @@
     font-weight: bold;
     font-size: 18px;
     height: 25px;
+}
+
+.active{
+    background-color: #26C2AD!important;
+    color: #00474b!important;
 }
 
 @media(max-width:525px){

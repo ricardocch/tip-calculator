@@ -1,19 +1,32 @@
+import { connect } from 'react-redux';
 import style from './Tip.module.css';
+import {setPercentage} from '../../../../actions/index'
+function Tip({setPercentage,Percentage}) {
+  let arrNumber = [5,10,15,25,50]
 
-function Tip() {
+  function onClick(e) {
+    setPercentage( Number(e.target.textContent.replace("%","")))
+  }
+
+  function onChange(e) {
+    setPercentage(e.target.value === '' ? 0 : Number(e.target.value) )
+  }
+
   return (
     <div className={style.Tip}>
         <span>Select Tip %</span>
         <div className={style.TipContainer}>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input type="text" placeholder="Custom"/>
+          {arrNumber.map((el,i) => <button key={i + 1} className={Percentage === el ? style.active : ''} onClick={(e) => onClick(e)}>{el}%</button>)}          
+          <input type="text" placeholder="Custom"  onChange={(e) => onChange(e)}/>
         </div>
     </div>
   );
 }
 
-export default Tip;
+function mapStateToProps (state){
+  return {
+    Percentage:state.Percentage
+  }
+}
+
+export default connect(mapStateToProps,{setPercentage})(Tip);

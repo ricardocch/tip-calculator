@@ -1,15 +1,23 @@
+import { connect } from 'react-redux';
 import style from './DisplayContainer.module.css';
 import NumberDisplay from './NumberDisplay/NumberDisplay'
-function DisplayContainer() {
+import {reset} from '../../../actions/index'
+function DisplayContainer({Tip,Total,reset}) {
   return (
     <div className={style.DisplayContainer}>
-        <NumberDisplay text="Tip Amount"/>
-        <NumberDisplay text="Total"/>
+        <NumberDisplay text="Tip Amount" total={ Tip === 0 ? '0.00' : Tip}/>
+        <NumberDisplay text="Total" total={Total === 0 ? '0.00' : Total}/>
         <div className={style.ButtonContainer}>
-          <button>Reset</button>
+          <button onClick={reset}>Reset</button>
         </div>
     </div>
   );
 }
 
-export default DisplayContainer;
+function mapStateToProps(state) {
+  return {
+    Tip: state.Tip,
+    Total: state.Total
+  }
+}
+export default connect(mapStateToProps,{reset})(DisplayContainer);

@@ -1,6 +1,7 @@
 import style from './NumberDisplay.module.css';
 
-function NumberDisplay({text}) {
+
+function NumberDisplay({text,total}) {
   return (
     <div className={style.NumberDisplay}>
         <div className={style.TextContainer}>
@@ -8,7 +9,7 @@ function NumberDisplay({text}) {
           <span>/ person</span>
         </div>
         <div className={style.NumberContainer}>
-          <span>$0.00</span>
+          <span>${total}</span>
         </div>
     </div>
   );
