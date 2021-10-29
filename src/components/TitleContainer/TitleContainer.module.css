@@ -1,0 +1,9 @@
+.TitleContainer{
+   width: 100%;
+}
+
+@media(max-width:525px){
+   .TitleContainer{
+      padding: 20px 0;
+   }
+}

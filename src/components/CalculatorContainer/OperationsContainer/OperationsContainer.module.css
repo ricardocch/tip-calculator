@@ -1,0 +1,15 @@
+.OperationsContainer{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.OperationsContainer span{
+    color: #00474b;
+}
+
+@media(max-width:525px){
+    .OperationsContainer{
+        width: 100%;
+    }
+}

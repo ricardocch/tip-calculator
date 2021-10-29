@@ -1,0 +1,27 @@
+.NumberDisplay{
+    padding: 30px 30px 0px 30px;
+}
+
+.TextContainer,.NumberContainer{
+    display: inline-block;
+    width: 50%;
+}
+
+.TextContainer{
+    color: #D9FAFF;
+}
+
+.textSepation{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.NumberContainer{
+    text-align: right;
+    color: #25C3AC;
+    font-size: 35px;
+    vertical-align: top;
+    font-weight: 500;
+}
