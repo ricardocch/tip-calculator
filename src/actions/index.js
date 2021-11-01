@@ -27,6 +27,13 @@ export function calculate(payload){
     }
 }
 
+export function calculateTip(payload){
+    return {
+        type:'CALCULATE_TIP',
+        payload
+    }
+}
+
 export function reset(){
     return {
         type:'RESET'

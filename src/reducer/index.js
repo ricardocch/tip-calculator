@@ -44,6 +44,21 @@ function rootReducer(state = initialState, action) {
         }
     }
 
+    if (action.type === 'CALCULATE_TIP') {
+        let percentage = action.payload / 100
+        let Tip = (state.Bill * percentage ) / state.People
+        Tip = Math.round(Tip * 100) / 100
+        let Total = (state.Bill/ state.People) + Tip
+        Total = Math.round(Total * 100) / 100
+
+        return {
+        ...state,
+        Percentage:action.payload ,
+        Tip, 
+        Total
+        }
+    }
+
     if (action.type === 'RESET') {
         return {
             Bill:0,
