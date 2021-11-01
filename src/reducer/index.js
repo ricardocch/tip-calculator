@@ -62,7 +62,7 @@ function rootReducer(state = initialState, action) {
     if (action.type === 'RESET') {
         return {
             Bill:0,
-            percentage:0,
+            Percentage:0,
             People:0,
             Tip:0,
             Total:0
